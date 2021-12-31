@@ -31,7 +31,7 @@ namespace Olive.SharedHelper
                 return string.Empty;
             }
 
-            using (var sha = new System.Security.Cryptography.SHA256Managed())
+            using (var sha = new System.Security.Cryptography.SHA512Managed())
             {
                 byte[] textBytes = Encoding.UTF8.GetBytes(inputstr);
                 byte[] hashBytes = sha.ComputeHash(textBytes);
