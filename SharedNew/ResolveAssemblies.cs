@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
-using Microsoft.Extensions.DependencyModel;
 using Olive;
 
 namespace OliveGenerator
@@ -61,7 +60,7 @@ namespace OliveGenerator
                  .ThenByDescending(x => x.Version)
                  .FirstOrDefault();
 
-            
+
             if (chosen != null)
                 return Assembly.LoadFile(chosen.File);
 
