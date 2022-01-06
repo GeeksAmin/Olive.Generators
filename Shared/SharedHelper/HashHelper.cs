@@ -33,8 +33,8 @@ namespace Olive.SharedHelper
 
             using (var sha = new System.Security.Cryptography.SHA512Managed())
             {
-                byte[] textBytes = Encoding.UTF8.GetBytes(inputstr);
-                byte[] hashBytes = sha.ComputeHash(textBytes);
+                var textBytes = Encoding.UTF8.GetBytes(inputstr);
+                var hashBytes = sha.ComputeHash(textBytes);
                 return BitConverter.ToString(hashBytes);
             }
         }
