@@ -2,8 +2,8 @@
   "profiles": {
     "WebApiClientSdkGenerator": {
       "commandName": "Project",
-      "commandLineArgs": "/assembly:\"website.dll\" /dataEndpoint:ProjectsService.SchedulingEndpoint /out:\"C:\\GeneratedEndpoints\" /hashonly",
-      "workingDirectory": "C:\\geeksprojects\\geeksms.projects\\Website\\bin\\Debug\\netcoreapp3.1"
+      "commandLineArgs": "/assembly:\"C:\\geeksprojects\\geeksms.people\\Website\\bin\\Debug\\netcoreapp3.1\\website.dll\" /dataEndpoint:PeopleService.MarketingEndPoint /out:\"C:\\GeneratedEndpoints\"",
+      "workingDirectory": "C:\\geeksprojects\\geeksms.people\\Website\\bin\\Debug\\netcoreapp3.1"
     }
   }
 }
